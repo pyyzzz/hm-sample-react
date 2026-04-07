@@ -25,6 +25,7 @@ const JsxBasic = () => {
   const age = 24;
   const address = "충남 천안시";
   const gen = "남";
+  // 커밋
   return (
     <>
       <h3 style={style}>JSX 기본 문법</h3>
