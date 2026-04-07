@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.name {
+  font-size: 12px;
+  font-style: italic;
+  background-color: antiquewhite;
+}
+
+.age {
+  font-size: 12px;
+  font-style: italic;
+  background-color: rosybrown;
+}
+.address {
+  font-size: 12px;
+  font-style: italic;
+  background-color: lightsteelblue;
+}
+.gen {
+  font-size: 12px;
+  font-style: italic;
+  background-color: lightcoral;
+}

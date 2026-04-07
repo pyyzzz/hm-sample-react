@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import JsxEx from "./JsxEx";
+import Welcome from "./Welcome";
 
+const members = [
+  {
+    name: "홍길동",
+    age: 30,
+    job: "개발자",
+    address: "서울시 강남구",
+    gen: "남자",
+    isAdult: true,
+  },
+  {
+    name: "김김김",
+    age: 24,
+    job: "디자이너",
+    address: "서울시 서초구",
+    gen: "여자",
+    isAdult: true,
+  },
+  {
+    name: "박박박",
+    age: 28,
+    job: "기획자",
+    address: "서울시 송파구",
+    gen: "남자",
+    isAdult: true,
+  },
+  {
+    name: "최최최",
+    age: 26,
+    job: "마케터",
+    address: "서울시 강서구",
+    gen: "여자",
+    isAdult: true,
+  },
+];
+
+// 성별, 성인 여부 넣기
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return members.map((member, index) => (
+    <Welcome key={index} member={member} />
+  ));
 }
 
 export default App;
